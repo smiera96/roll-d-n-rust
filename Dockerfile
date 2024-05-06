@@ -1,13 +1,10 @@
 # Build stage
-#FROM rust:1.69-buster as builder
 FROM rust:1.69 as builder
 
 WORKDIR /app
 
-# Copy the source code
 COPY . .
 
-# Build the application
 RUN cargo build --release
 
 # Production stage
