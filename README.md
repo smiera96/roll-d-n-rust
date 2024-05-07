@@ -83,7 +83,7 @@ I created this project as a test in a couple of days and using things I learned 
 Sorry if the code is not so nice or if the structure is not the best 🙏🙏🙏
 
 ## Postamn Collection
-On the "Postman" folder you can find a collection and an environment to test the API.]()
+On the "Postman" folder you can find a collection and an environment to test the API.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
