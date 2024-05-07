@@ -53,8 +53,10 @@ cargo test
 ## How to use
 I recommend downloading Postman collections and environments (check the project).
 These are the available endpoints:
+```
 [GET] /api/health-check
 [GET] /api/dice/roll?times=1&sides=20
+```
 
 ## Why I created this
 The main motivation was to try rust, I knew it had good random generation and I thought it was a good exercise.
