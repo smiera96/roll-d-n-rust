@@ -17,7 +17,7 @@ impl DiceRoller {
     pub fn process(&self) -> DiceResponse {
         let dice_roll_times: u8    = self.times.parse().unwrap();
         let dice_sides: u32        = self.sides.parse().unwrap();
-        let dice             = Dice::new(dice_sides);
+        let dice                   = Dice::new(dice_sides);
         let mut results = Vec::new();
 
         for _ in 0..dice_roll_times {
