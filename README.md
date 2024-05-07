@@ -53,19 +53,17 @@ cargo test
 ## How to use
 I recommend downloading Postman collections and environments (check the project).
 These are the available endpoints:
-```
-// Check if the API is up
-[GET] /api/health-check
 
-returns (JSON):
+[GET] `/api/health-check` ➡️ Check if the API is up ✔️✔️✔️
+```json
 {
     "ok"
 }
+```
 
-// Roll a N number of dices with M sides 
-[GET] /api/dice/roll?times=3&sides=20
+[GET] `/api/dice/roll?times=3&sides=20` ➡️ Roll a N number of dices with M sides 🎲🎲🎲
 
-returns (JSON):
+```json
 {
     "result": [
         1,
