@@ -56,9 +56,7 @@ These are the available endpoints:
 
 [GET] `/api/health-check` ➡️ Check if the API is up ✔️✔️✔️
 ```json
-{
-    "ok"
-}
+"ok"
 ```
 
 [GET] `/api/dice/roll?times=3&sides=20` ➡️ Roll a N number of dices with M sides 🎲🎲🎲
