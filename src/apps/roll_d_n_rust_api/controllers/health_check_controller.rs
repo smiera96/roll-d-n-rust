@@ -1,5 +1,5 @@
 use actix_web::{HttpResponse, Responder};
 
 pub async fn health_check() -> impl Responder {
-    HttpResponse::Ok().json("OK".to_string())
+    HttpResponse::Ok().json("ok".to_string())
 }
