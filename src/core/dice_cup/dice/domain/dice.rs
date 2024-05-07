@@ -10,6 +10,6 @@ impl Dice {
     }
 
     pub fn roll(&self) -> u32 {
-        return rand::thread_rng().gen_range(1..=self.sides-1)
+        return rand::thread_rng().gen_range(1..=self.sides)
     }
 }
