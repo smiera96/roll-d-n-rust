@@ -61,7 +61,7 @@ The main motivation was to try rust, I knew it had good random generation and I 
 A friend of mine told me about a roll game he is developing and I wanted to help him with something simple like a dice generator.
 So Mr. B. enjoy 😊
 
-## Futuro
+## Future improvements
 I created this project as a test in a couple of days and using things I learned in my loved <a href="https://codely.com/">CodelyTv</a> courses.
 Sorry if the code is not so nice or if the structure is not the best 🙏🙏🙏
 
