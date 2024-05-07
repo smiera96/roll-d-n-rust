@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "7c79cfb1-28d4-4fbf-b1b8-0396300d6cea",
+		"name": "Rust Api Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2168895"
+	},
+	"item": [
+		{
+			"name": "Dice",
+			"item": [
+				{
+					"name": "Roll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_api}}/dice/roll?times=1&sides=20",
+							"host": [
+								"{{url_api}}"
+							],
+							"path": [
+								"dice",
+								"roll"
+							],
+							"query": [
+								{
+									"key": "times",
+									"value": "1"
+								},
+								{
+									"key": "sides",
+									"value": "20"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "1d20",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_api}}/dice/roll?times=1&sides=20",
+									"host": [
+										"{{url_api}}"
+									],
+									"path": [
+										"dice",
+										"roll"
+									],
+									"query": [
+										{
+											"key": "times",
+											"value": "1"
+										},
+										{
+											"key": "sides",
+											"value": "20"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "content-length",
+									"value": "46"
+								},
+								{
+									"key": "content-type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "date",
+									"value": "Tue, 07 May 2024 15:35:18 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "Query deserialize error: missing field `sides`"
+						},
+						{
+							"name": "1d100",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url_api}}/dice/roll?times=1&sides=100",
+									"host": [
+										"{{url_api}}"
+									],
+									"path": [
+										"dice",
+										"roll"
+									],
+									"query": [
+										{
+											"key": "times",
+											"value": "1"
+										},
+										{
+											"key": "sides",
+											"value": "100"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-length",
+									"value": "16"
+								},
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "date",
+									"value": "Tue, 07 May 2024 15:39:48 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        16\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Health-Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/health-check",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"health-check"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
